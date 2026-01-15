@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+access.log
+firebase-debug.log
+*.pdf
+upload/
+.git
+.gitignore
+Dockerfile
+.dockerignore
