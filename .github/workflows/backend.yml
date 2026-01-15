@@ -35,6 +35,6 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/online-store-backend:latest
-          # Теперь этот кэш будет работать идеально
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+          # # Теперь этот кэш будет работать идеально
+          # cache-from: type=gha
+          # cache-to: type=gha,mode=max
