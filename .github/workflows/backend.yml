@@ -35,7 +35,7 @@ jobs:
           context: .
           push: true
           # ДОБАВЛЯЕМ v1 ПОСЛЕ latest (через запятую)
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/online-store-backend:latest, ${{ secrets.DOCKERHUB_USERNAME }}/online-store-backend:v1
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/online-store-backend:latest, ${{ secrets.DOCKERHUB_USERNAME }}/online-store-backend:v2
           # Кэш пока держи выключенным, чтобы наверняка
           # cache-from: type=gha
           # cache-to: type=gha,mode=max
