@@ -34,7 +34,8 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/online-store-backend:latest
-          # # Теперь этот кэш будет работать идеально
+          # ДОБАВЛЯЕМ v1 ПОСЛЕ latest (через запятую)
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/online-store-backend:latest, ${{ secrets.DOCKERHUB_USERNAME }}/online-store-backend:v1
+          # Кэш пока держи выключенным, чтобы наверняка
           # cache-from: type=gha
           # cache-to: type=gha,mode=max
