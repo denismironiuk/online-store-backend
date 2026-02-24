@@ -7,20 +7,30 @@ pipeline {
             spec:
               containers:
               - name: node
-                image: node:22-slim  # Используем ту версию, что указана у тебя в engines
+                image: node:22-slim
                 command: ['cat']
                 tty: true
               - name: kaniko
                 image: gcr.io/kaniko-project/executor:debug
                 command: ['cat']
                 tty: true
+                volumeMounts:
+                - name: docker-config
+                  mountPath: /kaniko/.docker/
+              volumes:
+              - name: docker-config
+                secret:
+                  secretName: dockerhub-secret
+                  items:
+                    - key: .dockerconfigjson
+                      path: config.json
             '''
         }
     }
 
     environment {
         // Замени на свои данные для Docker Hub или ECR
-        IMAGE_NAME = "den4ik/shop-server"
+        IMAGE_NAME = "akarv/online-store-backend"
         IMAGE_TAG = "v${env.BUILD_NUMBER}"
     }
 
