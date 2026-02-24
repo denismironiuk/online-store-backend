@@ -20,7 +20,7 @@ pipeline {
               volumes:
               - name: docker-config
                 secret:
-                  secretName: dockerhub-secret
+                  secretName: dockerhub-config
                   items:
                     - key: .dockerconfigjson
                       path: config.json
