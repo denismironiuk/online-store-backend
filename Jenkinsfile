@@ -7,7 +7,7 @@ pipeline {
             spec:
               containers:
               - name: node
-                image: node:22-slim
+                image: node:22
                 command: ['cat']
                 tty: true
               - name: kaniko
