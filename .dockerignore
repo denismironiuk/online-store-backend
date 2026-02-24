@@ -8,5 +8,5 @@ upload/
 .gitignore
 Dockerfile
 .dockerignore
-
+.env
 k8s/
