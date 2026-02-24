@@ -1,4 +1,4 @@
-const EmailSender = require('../util/EmailSender');
+const EmailSender = require('../utils/EmailSender');
 const easyinvoice = require('easyinvoice');
 const Order = require('../models/order');
 const {generateInvoiceObject} = require('./invoice/generate-invoice')
