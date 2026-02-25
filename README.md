@@ -6,7 +6,7 @@ This is a production-ready Node.js backend for an e-commerce platform, built wit
 * **Application:** Node.js, Express, MongoDB (Atlas), Redis
 * **CI/CD:** Jenkins (Pipeline as Code), Docker, Kaniko
 * **GitOps & Delivery:** ArgoCD, Kustomize
-* **Infrastructure:** Kubernetes (AKS), Gateway API, Cilium CNI
+* **Infrastructure:** Kubernetes (AKS), Gateway API
 * **Autoscaling:** KEDA (Event-driven scaling based on Redis metrics)
 * **Testing & Quality:** Jest, Supertest, In-Memory MongoDB (Quality Gates)
 * **Observability:** Prometheus, Grafana
