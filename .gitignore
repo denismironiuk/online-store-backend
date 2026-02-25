@@ -5,3 +5,6 @@ nodemon.jsonaccess.log
 *.pdf
 firebase-debug.log
 .env
+upload/
+order.pdf
+*.log
